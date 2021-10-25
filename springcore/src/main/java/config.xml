@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean class="com.springcore.Student" name="student1" >
-		<property name="studentId">
-			<value>123</value>
-		</property>
-		<property name="studentName">
-			<value>Rishabh</value>
-		</property>
-		<property name="studentAddress">
-			<value>333 vinoba basti</value>
-		</property>
+	<bean class="com.springcore.Student" name="student1" p:studentId="17103327" p:studentName="rishabh bansal"
+	p:studentAddress="jiit noida">
 		<!-- collaborators and configuration for this bean go here -->
 	</bean>
 
