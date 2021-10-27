@@ -15,6 +15,10 @@ http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 		p:street="vinoba basti" p:houseNo="333">
 		<!-- collaborators and configuration for this bean go here -->
 	</bean>
+	<bean class="com.springcore.autowire.Address" name="qwe"
+		p:street="vinoba basti" p:houseNo="334">
+		<!-- collaborators and configuration for this bean go here -->
+	</bean>
 	<bean class="com.springcore.autowire.Emp" name="emp">
 	</bean>
 
