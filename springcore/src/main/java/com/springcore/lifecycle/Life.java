@@ -2,7 +2,12 @@ package com.springcore.lifecycle;
 
 import javax.management.loading.PrivateClassLoader;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+@Component
 public class Life {
+	
+	@Value("rishabh")
 	private String bansal;
 
 	@Override
