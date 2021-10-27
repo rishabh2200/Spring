@@ -2,18 +2,21 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:util="http://www.springframework.org/schema/util"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
- http://www.springframework.org/schema/beans/spring-beans.xsd">
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+<util:list list-class="java.util.LinkedList" id="rishabh">
+<value>1234</value>
+<value>1234</value>
+<value>1234</value>
+</util:list>
 	<bean class="com.springcore.collection.Employee" name="Employee">
 		<property name="name">
 			<value>rishabh</value>
 		</property>
-		<property name="phone">
-			<list>
-				<value>123456</value>
-				<value>098765</value>
-				<value>34567</value>
-			</list>
+		<property name="phone" ref="rishabh">
 		</property>
 		<property name="address">
 			<set>
