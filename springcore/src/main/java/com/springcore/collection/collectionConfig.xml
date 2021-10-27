@@ -7,12 +7,12 @@
  http://www.springframework.org/schema/beans/spring-beans.xsd
  http://www.springframework.org/schema/util
 http://www.springframework.org/schema/util/spring-util-2.5.xsd">
-<util:list list-class="java.util.LinkedList" id="rishabh">
-<value>1234</value>
-<value>1234</value>
-<value>1234</value>
-</util:list>
-	<bean class="com.springcore.collection.Employee" name="Employee">
+	<util:list list-class="java.util.LinkedList" id="rishabh">
+		<value>1234</value>
+		<value>1234</value>
+		<value>1234</value>
+	</util:list>
+	<bean class="com.springcore.collection.Employee" name="Employee" scope="prototype">
 		<property name="name">
 			<value>rishabh</value>
 		</property>

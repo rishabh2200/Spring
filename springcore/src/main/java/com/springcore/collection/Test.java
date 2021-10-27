@@ -12,6 +12,9 @@ public class Test {
        		 new ClassPathXmlApplicationContext("com/springcore/collection/collectionConfig.xml");
 		System.out.println("bansal");
 		Employee st = (Employee)context.getBean("Employee");
+		Employee st1 = (Employee)context.getBean("Employee");
+		System.out.println(st.hashCode());
+		System.out.println(st1.hashCode());
 		System.out.println(st);
 		System.out.println(st.getPhone().getClass().getName());
 	}
