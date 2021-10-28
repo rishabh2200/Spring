@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class Life {
 	
-	@Value("rishabh")
-	private String bansal;
+	@Value("#{10+3}")
+	private Integer bansal;
 
 	@Override
 	public String toString() {
