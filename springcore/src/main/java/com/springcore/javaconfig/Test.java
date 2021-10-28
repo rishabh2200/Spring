@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 	public static void main(String[] args) {
 		ApplicationContext context=new AnnotationConfigApplicationContext(JavaConfig.class);
-		Student st=(Student)context.getBean("student");
+		Student st=(Student)context.getBean("getStudent");
 		System.out.println(st);
 	}
 }
