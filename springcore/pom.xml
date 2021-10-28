@@ -17,6 +17,7 @@
                             <goal>shade</goal>
                         </goals>
                     </execution>
+                    
                 </executions>
             </plugin>
 
